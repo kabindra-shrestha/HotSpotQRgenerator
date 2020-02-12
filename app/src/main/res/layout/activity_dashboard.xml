@@ -53,6 +53,7 @@
             android:layout_marginBottom="8dp"
             android:text="Username / Password"
             android:textSize="14sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +69,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/hotspot_qr_code" />
+            app:layout_constraintTop_toBottomOf="@+id/hotspot_username_password_label" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
