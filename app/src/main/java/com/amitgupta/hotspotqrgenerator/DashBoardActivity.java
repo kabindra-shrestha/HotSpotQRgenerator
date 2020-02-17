@@ -61,7 +61,7 @@ public class DashBoardActivity extends AppCompatActivity {
             } else*/
             if (WifiManager.WIFI_STATE_ENABLED == state % 10) {
                 try {
-                    if (Build.VERSION.SDK_INT >= 27) {
+                    if (Build.VERSION.SDK_INT <= 27) {
 //                Toast.makeText(DashBoardActivity.this, "hotspotStateReceiver: enabled - " + state, Toast.LENGTH_SHORT).show();
 
                         WifiConfiguration wifiConfig = null;
