@@ -1,26 +1,23 @@
-package com.amitgupta.hotspotqrgenerator
+package com.kabindra.hotspotqrgenerator
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
+import com.kabindra.hotspotqrgenerator.base.BaseActivity
+import com.kabindra.hotspotqrgenerator.databinding.ActivityStartHotspotBinding
 import com.android.dx.stock.ProxyBuilder
-import kotlinx.android.synthetic.main.activity_start_hotspot.*
 import java.io.File
-import java.lang.reflect.InvocationHandler
 import java.lang.reflect.Method
 
-
-class StartHotSpotActivity:AppCompatActivity() {
+class StartHotSpotActivity :
+    BaseActivity<ActivityStartHotspotBinding>(ActivityStartHotspotBinding::inflate) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start_hotspot)
 
-        start_hotspot_btn.setOnClickListener {
+        views.startHotspotBtn.setOnClickListener {
             startHotspot(this)
         }
     }

@@ -1,4 +1,7 @@
-package com.amitgupta.hotspotqrgenerator;
+package com.kabindra.hotspotqrgenerator;
+
+import static android.graphics.Color.BLACK;
+import static android.graphics.Color.TRANSPARENT;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -13,9 +16,6 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static android.graphics.Color.BLACK;
-import static android.graphics.Color.TRANSPARENT;
 
 public class QRCodeUtils {
 

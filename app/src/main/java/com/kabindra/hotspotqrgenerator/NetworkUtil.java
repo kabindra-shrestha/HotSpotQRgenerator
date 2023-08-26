@@ -1,4 +1,4 @@
-package com.amitgupta.hotspotqrgenerator;
+package com.kabindra.hotspotqrgenerator;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
